@@ -7,9 +7,11 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <Header />
-    <Main />
-    <Footer />
+    <React.Fragment >
+      <Header />
+      <Main />
+      <Footer />
+    </React.Fragment>
   );
 }
 
