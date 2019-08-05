@@ -1,10 +1,82 @@
-import React from 'react';
-import style from 'styled-components'
+import React from "react";
+import GitHubButton from "react-github-btn";
+import { motion } from "framer-motion";
+import HeaderStyle from "../styled/HeaderStyle";
+import Button from "../styled/Button";
+import logo from "../assets/lens-icon.png";
 
-function Header() {
+const subtitleVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
+
+const buttonVariants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
+export const Header = () => {
   return (
-    'Header'
+    <HeaderStyle>
+      <div class="title">
+        <div>
+          <img src={logo} alt="" />
+        </div>
+        <div id="name">Kafka Lens</div>
+        <div />
+      </div>
+
+      <motion.p
+        initial="hidden"
+        animate="visible"
+        variants={subtitleVariants}
+        transition={{
+          delay: 0.5,
+        }}
+        className="subtitle"
+      >
+        Open source Kafka monitoring solution
+      </motion.p>
+
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={buttonVariants}
+        transition={{
+          delay: 1,
+          x: { type: "inertia", stiffness: 50 },
+          default: { duration: 1 },
+        }}
+      >
+        <div class="title">
+          <p>Star us on GitHub!</p>
+          <GitHubButton
+            className={"githubbtn"}
+            href="https://github.com/oslabs-beta/kafka-lens"
+            data-icon="octicon-star"
+            aria-label="Star ntkme/github-buttons on GitHub"
+          >
+            Star
+          </GitHubButton>
+        </div>
+        <Button
+          className={"button"}
+          href="https://kafkalens.s3-us-west-1.amazonaws.com/assets/dist/Kafka+Lens-2.0.0.dmg"
+        >
+          <div>Download for MacOS</div>
+        </Button>
+        <Button
+          className={"button"}
+          href="https://kafkalens.s3-us-west-1.amazonaws.com/assets/dist/kafka-lens_2.0.0_amd64.snap"
+        >
+          <div>Download for Linux</div>
+        </Button>
+      </motion.div>
+    </HeaderStyle>
   );
-}
+};
 
 export default Header;
