@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@csstools/normalize.css": "^10.1.0",
     "framer-motion": "^1.5.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -13,6 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "aws s3 sync build/ s3://kafkalens.io",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
