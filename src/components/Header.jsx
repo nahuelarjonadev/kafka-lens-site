@@ -38,7 +38,7 @@ export const Header = () => {
         }}
         className="subtitle"
       >
-        Open source Kafka monitoring solution
+        Open source Kafka monitor
       </motion.p>
 
       <motion.div
@@ -62,18 +62,18 @@ export const Header = () => {
             Star
           </GitHubButton>
         </div>
-        <Button
-          className={"button"}
-          href="https://kafkalens.s3-us-west-1.amazonaws.com/assets/dist/Kafka+Lens-2.0.0.dmg"
-        >
-          <div>Download for MacOS</div>
-        </Button>
-        <Button
-          className={"button"}
-          href="https://kafkalens.s3-us-west-1.amazonaws.com/assets/dist/kafka-lens_2.0.0_amd64.snap"
-        >
-          <div>Download for Linux</div>
-        </Button>
+        <div className="title">
+          <Button
+            href="https://kafkalens.s3-us-west-1.amazonaws.com/assets/dist/Kafka+Lens-2.0.0.dmg"
+          >
+            <div>Download for MacOS</div>
+          </Button>
+          <Button
+            href="https://kafkalens.s3-us-west-1.amazonaws.com/assets/dist/kafka-lens_2.0.0_amd64.snap"
+          >
+            <div>Download for Linux</div>
+          </Button>
+        </div>
       </motion.div>
     </HeaderStyle>
   );
