@@ -1,4 +1,4 @@
-.App {
+impo .App {
   text-align: center;
 }
 
@@ -22,6 +22,17 @@
 .App-link {
   color: #61dafb;
 }
+
+.footer {
+  text-align: center;
+}
+
+.dev {
+  margin-bottom: 1em;
+  width: 10em;
+  border-radius: 100%;
+}
+
 
 @keyframes App-logo-spin {
   from {
