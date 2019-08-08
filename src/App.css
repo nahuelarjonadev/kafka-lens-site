@@ -1,4 +1,4 @@
-.App {
+impo .App {
   text-align: center;
 }
 
@@ -21,6 +21,63 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.footer {
+  text-align: center;
+}
+
+.dev {
+  margin-bottom: 1em;
+  width: 10em;
+  border-radius: 100%;
+}
+
+.footer {
+  display: grid;
+  grid-area: footer;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header";
+}
+
+.profilePic img {
+  grid-area: profilePic;
+}
+
+.footer h3 {
+  grid-area: header;
+}
+
+.linkedin {
+  color: #1a8f85;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header";
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .profilePic img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .profilePic p {
+    font-size: 25px;
+  }
+
+  @media screen and (min-width: 1368px) {
+    .footer {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "header header header header";
+      text-align: center;
+      font-size: 30px;
+    }
+  }
 }
 
 @keyframes App-logo-spin {
