@@ -23,7 +23,6 @@ const HeaderStyle = styled.div`
     margin-right: 1em;
   }
   .title {
-    margin-top: 1rem;
     display: flex;
     @media (max-width: 767px) {
       flex-direction: column;
@@ -40,7 +39,6 @@ const HeaderStyle = styled.div`
     margin: 2rem;
   }
   #name {
-    padding-top: 1rem;
     font-size: 3rem;
     @media (min-width: 767px) {
       font-size: 5rem;
