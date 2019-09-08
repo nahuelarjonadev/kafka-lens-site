@@ -21,12 +21,9 @@ const buttonVariants = {
 export const Header = () => {
   return (
     <HeaderStyle>
-      <div class="title">
-        <div>
-          <img src={logo} alt="" />
-        </div>
+      <div className="title">
+        <img src={logo} alt="" />
         <div id="name">Kafka Lens</div>
-        <div />
       </div>
 
       <motion.p
@@ -51,7 +48,7 @@ export const Header = () => {
           default: { duration: 1 },
         }}
       >
-        <div class="title">
+        <div className="title">
           <p>Star us on GitHub!</p>
           <GitHubButton
             className={"githubbtn"}
@@ -69,7 +66,7 @@ export const Header = () => {
             <div>Download for MacOS</div>
           </Button>
           <Button
-            href="https://kafkalens.s3-us-west-1.amazonaws.com/assets/dist/kafka-lens_2.0.0_amd64.snap"
+            href="https://kafkalens.s3-us-west-1.amazonaws.com/assets/dist/kafka-lens_2.0.1_amd64.snap"
           >
             <div>Download for Linux</div>
           </Button>
