@@ -14,7 +14,7 @@ function Footer() {
       </div>
       <div className="profilePic">
         <img src={AngelPicture} className="dev" alt="Angel Evelyn Kerridge"/>
-        <p>Angel Evelyn Kerridge <br></br><a className="linkedin" href='https://www.linkedin.com/in/angelkerridge/'>@Angel</a></p>
+        <p>Angel Evelyn Vega <br></br><a className="linkedin" href='https://www.linkedin.com/in/angelkerridge/'>@Angel</a></p>
       </div>
       <div className="profilePic">
         <img src={BrianPicture} className="dev" alt="Brian Kwok"/>
